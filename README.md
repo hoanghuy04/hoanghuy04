@@ -26,7 +26,7 @@ An enterprise agricultural management system designed to coordinate greenhouse c
 - **Architectural Highlight**: Clean layered architecture featuring real-time WebSocket state updates, automated data change audit logs using Javers, and secure media attachments stored in AWS S3.
 - **Repository**: [farm-management](https://github.com/hoanghuy04/farm-management)
 
-#### [Mediahub – Messaging Platform](https://github.com/hoanghuy04/IUH_Project_Zalo_Backend)
+#### [Mediahub – Messaging Platform](https://github.com/hoanghuy04/Mediahub)
 A high-performance Zalo-inspired real-time messaging application leveraging a distributed data layer, automated integration flows, and microservices architecture.
 
 `Spring Boot` • `React` • `React Native` • `Kubernetes` • `Jenkins` • `MongoDB` • `Redis`
