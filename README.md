@@ -27,12 +27,12 @@ An enterprise agricultural management system designed to coordinate greenhouse c
 - **Repository**: [farm-management](https://github.com/hoanghuy04/farm-management)
 
 #### [Mediahub – Messaging Platform](https://github.com/hoanghuy04/Mediahub)
-A high-performance Zalo-inspired real-time messaging application leveraging a distributed data layer, automated integration flows, and microservices architecture.
+A high-performance real-time messaging application leveraging a distributed data layer, automated integration flows, and microservices architecture.
 
 `Spring Boot` • `React` • `React Native` • `Kubernetes` • `Jenkins` • `MongoDB` • `Redis`
 
 - **Architectural Highlight**: Microservices architecture fully containerized and orchestrated inside a Kubernetes cluster, deployed automatically via Jenkins CI/CD pipelines, using Redis for active session validation and MongoDB for message persistence.
-- **Repository**: [IUH_Project_Zalo_Backend](https://github.com/hoanghuy04/IUH_Project_Zalo_Backend)
+- **Repository**: [Mediahub](https://github.com/hoanghuy04/Mediahub)
 
 ---
 
