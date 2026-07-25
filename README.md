@@ -51,5 +51,5 @@ A high-performance real-time messaging application leveraging a distributed data
 
 - **Email**: [duonghoanghuydhi2@gmail.com](mailto:duonghoanghuydhi2@gmail.com)
 - **LinkedIn**: [linkedin.com/in/hhuy-duong](https://www.linkedin.com/in/hhuy-duong)
-- **Portfolio**: [portfolio-tan-nine-54.vercel.app](https://portfolio-tan-nine-54.vercel.app)
+- **Portfolio**: [https://bhub.id.vn](https://bhub.id.vn/)
 
