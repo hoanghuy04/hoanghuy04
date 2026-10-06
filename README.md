@@ -56,6 +56,19 @@ An AI assistant that answers students' academic questions from the university do
 - Document-level access control, prompt injection detection, multi-LLM failover and token cost tracking
 - **Repositories**: [AI Agent](https://github.com/IUH-UniSage/unisage-agent) · [Backend](https://github.com/IUH-UniSage/unisage-backend) · [API Gateway](https://github.com/IUH-UniSage/unisage-gateway) · [Web](https://github.com/IUH-UniSage/unisage-web)
 
+#### [Document OCR – Card Core (LISA AI)](https://bhub.id.vn/projects/document-ocr) · AETHER NOVA AI
+Document extraction service behind LISA AI, a visa assistant: turns Vietnamese passports, ID cards, contracts, bank statements and tickets into structured, validated fields.
+
+`FastAPI` • `TaskIQ` • `Redis` • `PaddleOCR` • `PP-StructureV3` • `Tesseract` • `Google Vision` • `pydantic-ai` • `Vision LLM`
+
+- **Extraction for 39 document types**: OCR → quality gate → regex/checksum/MRZ rules → Vision LLM only for missing fields; every field returns source, confidence, validation result and a bounding box
+- **Precheck**: rejects blank, too small or over-budget files before a job is created, so no OCR or LLM cost is wasted
+- **Benchmark**: accuracy (Exact Match, CER/WER), latency and concurrency of local OCR engines vs Google Vision on clear, scanned, skewed, blurred and glare images, used to pick the engine per document type
+- **Test & Eval**: ground-truth test sets, test runs and bulk tests in a QA web app with bbox overlay, plus a regression CLI that catches quality drops after each prompt or model change
+- **Fine-tuning**: Vietnamese dataset preparation and PP-OCRv5 recognition fine-tuning, evaluated against the base model
+- **Prompt quality**: fixed 111 prompt bugs, re-evaluating output after each fix
+- *Private repository (company project)*
+
 #### [Mediahub – Messaging Platform](https://github.com/hoanghuy04/Mediahub)
 A real-time messaging platform built as microservices, deployed on Kubernetes through Jenkins CI/CD.
 
