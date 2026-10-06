@@ -31,14 +31,14 @@ I build LLM applications end to end: document ingestion, chunking and embedding,
 
 ### Experience
 
-**AETHER NOVA AI Co., Ltd. – AI Engineer** · Oct 2025 – Present
+**AETHER NOVA AI Co., Ltd. – AI Engineer** · Feb 2026 – Present
 *LISA AI – AI Visa Assistant & Document OCR Extraction*
 - Fixed **111 prompt bugs** in the LLM agent and document extraction, re-evaluating output quality after each fix
 - Benchmarked local OCR models (PaddleOCR, PP-StructureV3, PaddleOCR-VL, Tesseract) against Google Vision on accuracy, latency and concurrency
 - Built an OCR precheck stage that rejects invalid files before running OCR or Vision LLM
 - Prepared Vietnamese datasets, fine-tuned PP-OCRv5 recognition and evaluated it against the base model
 
-**Beeyond – Software Engineer Intern** · Jul 2025 – Sep 2025
+**Beeyond – Software Engineer Intern** · Oct 2025 – Jan 2026
 *AFARM – Smart Farm Management ERP* · `Spring Boot` • `PostgreSQL` • `JaVers` • `React`
 
 ---
