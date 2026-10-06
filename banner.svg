@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Duong Hoang Huy - AI Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05121c"/>
+      <stop offset="0.55" stop-color="#0a2533"/>
+      <stop offset="1" stop-color="#0d3a47"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1d4a5a" stroke-width="0.6" opacity="0.5"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="card"><rect x="10" y="10" width="1180" height="280" rx="24"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect x="10" y="10" width="1180" height="280" fill="url(#bg)"/>
+    <rect x="10" y="10" width="1180" height="280" fill="url(#grid)"/>
+
+    <!-- retrieval graph on the right -->
+    <g stroke="#2dd4e6" stroke-width="1.2" opacity="0.35">
+      <line x1="880" y1="70" x2="960" y2="120"/>
+      <line x1="960" y1="120" x2="1060" y2="90"/>
+      <line x1="960" y1="120" x2="1010" y2="200"/>
+      <line x1="1010" y1="200" x2="1110" y2="180"/>
+      <line x1="1060" y1="90" x2="1110" y2="180"/>
+      <line x1="950" y1="245" x2="1010" y2="200"/>
+      <line x1="880" y1="70" x2="950" y2="245"/>
+    </g>
+    <g fill="#5eead4">
+      <circle cx="880" cy="70" r="4" opacity="0.7"/>
+      <circle cx="960" cy="120" r="6" filter="url(#glow)"/>
+      <circle cx="1060" cy="90" r="4" opacity="0.7"/>
+      <circle cx="1010" cy="200" r="5" opacity="0.8"/>
+      <circle cx="1110" cy="180" r="4" opacity="0.7"/>
+      <circle cx="950" cy="245" r="3.5" opacity="0.6"/>
+    </g>
+
+    <!-- icon -->
+    <g filter="url(#glow)">
+      <rect x="80" y="80" width="140" height="140" rx="26" fill="#071a24" stroke="#2dd4e6" stroke-width="3"/>
+    </g>
+    <g fill="none" stroke="#e6fbff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M120 150 L135 125 H165 L180 150 L165 175 H135 Z" stroke="#2dd4e6" stroke-width="5"/>
+      <circle cx="150" cy="150" r="9" fill="#e6fbff" stroke="none"/>
+    </g>
+
+    <!-- text -->
+    <text x="260" y="105" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4" fill="#5eead4">AI ENGINEER · LLM / RAG / AI AGENTS</text>
+    <text x="258" y="170" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="58" font-weight="800" fill="#ffffff">Dương Hoàng Huy</text>
+    <text x="260" y="212" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" fill="#b6c9d1">Building RAG systems, AI agents and document AI</text>
+  </g>
+</svg>

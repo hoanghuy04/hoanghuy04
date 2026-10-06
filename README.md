@@ -1,55 +1,77 @@
+<p align="center">
+  <a href="https://bhub.id.vn"><img src="./banner-ai.png" alt="Dương Hoàng Huy – AI Engineer" width="100%"/></a>
+</p>
+
+<p align="center">
+  <a href="https://bhub.id.vn"><img src="https://img.shields.io/badge/Portfolio-bhub.id.vn-0d3a47?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://www.linkedin.com/in/hhuy-duong"><img src="https://img.shields.io/badge/LinkedIn-hhuy--duong-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:duonghoanghuydhi2@gmail.com"><img src="https://img.shields.io/badge/Email-duonghoanghuydhi2-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
+</p>
+
 # Dương Hoàng Huy
 
-I am a Software Engineering student specializing in Backend Development and Cloud-Native Technologies.
+AI Engineer at **AETHER NOVA AI** and Software Engineering student at Industrial University of Ho Chi Minh City (GPA 3.73/4.00).
 
-Most of what I learn comes from personal projects and challenging academic assignments. I love building secure, high-performance web applications, automating deployment pipelines, and scaling systems with container orchestration.
+I build LLM applications end to end: document ingestion, chunking and embedding, vector and hybrid search, reranking, agent orchestration with tool calling, prompt evaluation, and the guardrails, tracing and cost control needed to run them in production. Before AI, I built backend systems with Java / Spring Boot, microservices and CI/CD.
 
 ---
 
 ### Tech Stack
 
-- **Languages**: Java, TypeScript, JavaScript, Python
-- **Backend & Frameworks**: Spring Boot, Spring Security, Spring Data JPA, FastAPI
+- **LLM & AI Agents**: pydantic-ai, Pydantic Graph, Spring AI, LLM APIs (OpenAI, Gemini, Anthropic), Function/Tool Calling, Structured Output, Prompt Engineering
+- **RAG & Retrieval**: Document Ingestion, Chunking Strategy, Embedding Models, Qdrant, pgvector, Hybrid Search (BM25 + Vector, RRF), Reranking, Metadata Filtering
+- **Document AI**: OCR (PaddleOCR, Tesseract, Google Vision), Vision LLM, PP-OCR Fine-tuning, OCR Benchmark (Exact Match, CER/WER)
+- **AI Safety & LLM Ops**: Prompt Injection Mitigation, Sensitive Data Redaction, Access Control, Tracing & Logging, Token Budget & Cost Tracking
+- **Backend**: Python, FastAPI, Celery, Java, Spring Boot, Spring Cloud Gateway, Spring Security
 - **Databases**: PostgreSQL, MySQL, MongoDB, Redis
-- **Cloud & DevOps**: AWS, Docker, Kubernetes, Jenkins CI/CD, Kafka & MessageMQ
-- **Frontend**: React, Next.js, React Native
+- **Cloud & DevOps**: Docker, Kubernetes, Jenkins CI/CD, AWS, MinIO, Kafka & RabbitMQ
+- **Frontend**: React, Next.js, TypeScript, React Native
+
+---
+
+### Experience
+
+**AETHER NOVA AI Co., Ltd. – AI Engineer** · Oct 2025 – Present
+*LISA AI – AI Visa Assistant & Document OCR Extraction*
+- Fixed **111 prompt bugs** in the LLM agent and document extraction, re-evaluating output quality after each fix
+- Benchmarked local OCR models (PaddleOCR, PP-StructureV3, PaddleOCR-VL, Tesseract) against Google Vision on accuracy, latency and concurrency
+- Built an OCR precheck stage that rejects invalid files before running OCR or Vision LLM
+- Prepared Vietnamese datasets, fine-tuned PP-OCRv5 recognition and evaluated it against the base model
+
+**Beeyond – Software Engineer Intern** · Jul 2025 – Sep 2025
+*AFARM – Smart Farm Management ERP* · `Spring Boot` • `PostgreSQL` • `JaVers` • `React`
 
 ---
 
 ### Featured Projects
 
-#### [Smart Farm Management Platform](https://github.com/hoanghuy04/farm-management)
-An enterprise agricultural management system designed to coordinate greenhouse cultivation cycles, assets/infrastructure monitoring, task dispatching, and real-time operations.
+#### [UniSage – AI Academic Assistant (Agentic RAG)](https://bhub.id.vn/projects/unisage) · Graduation Thesis
+An AI assistant that answers students' academic questions from the university documents they are allowed to read, with citations.
 
-`Spring Boot` • `React` • `PostgreSQL` • `WebSocket` • `AWS S3` • `Javers`
+`FastAPI` • `pydantic-ai` • `Pydantic Graph` • `Qdrant` • `PostgreSQL` • `Redis` • `Celery` • `Spring Boot` • `React`
 
-- **Architectural Highlight**: Clean layered architecture featuring real-time WebSocket state updates, automated data change audit logs using Javers, and secure media attachments stored in AWS S3.
-- **Repository**: [farm-management](https://github.com/hoanghuy04/farm-management)
+- RAG pipeline for PDF, Word and Excel: parsing, chunking, embedding and Qdrant indexing with Celery
+- Each chunk embedded three ways (content, summary, sample questions) to raise retrieval recall
+- Agent graph with intent routing, query rewriting, reranking and web-search tool calling
+- Document-level access control, prompt injection detection, multi-LLM failover and token cost tracking
+- **Repositories**: [AI Agent](https://github.com/IUH-UniSage/unisage-agent) · [Backend](https://github.com/IUH-UniSage/unisage-backend) · [API Gateway](https://github.com/IUH-UniSage/unisage-gateway) · [Web](https://github.com/IUH-UniSage/unisage-web)
 
 #### [Mediahub – Messaging Platform](https://github.com/hoanghuy04/Mediahub)
-A high-performance real-time messaging application leveraging a distributed data layer, automated integration flows, and microservices architecture.
+A real-time messaging platform built as microservices, deployed on Kubernetes through Jenkins CI/CD.
 
 `Spring Boot` • `React` • `React Native` • `Kubernetes` • `Jenkins` • `MongoDB` • `Redis`
 
-- **Architectural Highlight**: Microservices architecture fully containerized and orchestrated inside a Kubernetes cluster, deployed automatically via Jenkins CI/CD pipelines, using Redis for active session validation and MongoDB for message persistence.
-- **Repository**: [Mediahub](https://github.com/hoanghuy04/Mediahub)
+#### [Smart Farm Management Platform](https://github.com/hoanghuy04/farm-management)
+An agricultural management system for cultivation cycles, assets, task dispatching and real-time operations.
+
+`Spring Boot` • `React` • `PostgreSQL` • `WebSocket` • `AWS S3` • `Javers`
 
 ---
 
-### Currently Exploring
+### Currently Working On
 
-- Microservices & System design patterns
-- Container orchestration & Kubernetes administration
-- Event-driven patterns using Apache Kafka
-- Continuous Integration & Deployment (Jenkins/GitHub Actions)
+- Hybrid search (BM25 + vector) with Reciprocal Rank Fusion
+- Cross-encoder reranking for higher answer precision
+- RAG and OCR evaluation sets to measure every prompt or model change
 
 **Keep Learning • Keep Building • Keep Growing**
-
----
-
-### Contact
-
-- **Email**: [duonghoanghuydhi2@gmail.com](mailto:duonghoanghuydhi2@gmail.com)
-- **LinkedIn**: [linkedin.com/in/hhuy-duong](https://www.linkedin.com/in/hhuy-duong)
-- **Portfolio**: [bhub.vn](https://bhub.id.vn/)
-
