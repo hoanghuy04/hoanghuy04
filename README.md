@@ -48,6 +48,8 @@ I build LLM applications end to end: document ingestion, chunking and embedding,
 #### [UniSage – AI Academic Assistant (Agentic RAG)](https://bhub.id.vn/projects/unisage) · Graduation Thesis
 An AI assistant that answers students' academic questions from the university documents they are allowed to read, with citations.
 
+<a href="https://bhub.id.vn/projects/unisage"><img src="./assets/unisage.png" alt="UniSage home page" width="100%"/></a>
+
 `FastAPI` • `pydantic-ai` • `Pydantic Graph` • `Qdrant` • `PostgreSQL` • `Redis` • `Celery` • `Spring Boot` • `React`
 
 - RAG pipeline for PDF, Word and Excel: parsing, chunking, embedding and Qdrant indexing with Celery
@@ -58,6 +60,8 @@ An AI assistant that answers students' academic questions from the university do
 
 #### [Document OCR – Card Core (LISA AI)](https://bhub.id.vn/projects/document-ocr) · AETHER NOVA AI
 Document extraction service behind LISA AI, a visa assistant: turns Vietnamese passports, ID cards, contracts, bank statements and tickets into structured, validated fields.
+
+<a href="https://bhub.id.vn/projects/document-ocr"><img src="./assets/document-ocr.png" alt="Document OCR extraction result with bounding boxes" width="100%"/></a>
 
 `FastAPI` • `TaskIQ` • `Redis` • `PaddleOCR` • `PP-StructureV3` • `Tesseract` • `Google Vision` • `pydantic-ai` • `Vision LLM`
 
